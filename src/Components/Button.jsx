@@ -1,5 +1,5 @@
 const BUTTON_VARIANTS = {
-  primary: "bg-[#FFBC4C] hover:bg-[#e6a200] transition-duration-700",
+  primary: "bg-[#FFBC4C] font-bold hover:hover:shadow-[0px_0px_5px_1px_#346739] transition-duration-700",
   secondary: "bg-blue-500 text-white hover:bg-blue-600 transition-duration-700",
   tertiary:
     "bg-slate-700 text-white hover:bg-slate-800 transition-duration-700",

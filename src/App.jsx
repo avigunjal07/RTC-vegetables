@@ -1,5 +1,4 @@
 import FeatureSection from "./Components/FeatureCards";
-// import ImgMainHeader from "./../assets/main-header.jpg";
 import Button from "./Components/Button";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
@@ -9,14 +8,14 @@ function App() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-linear-to-b from-green-50 via-white to-white min-h-screen">
+    <div className="bg-[#F2EDC2] from-green-50 via-white to-white min-h-screen">
       <Navbar />
 
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-10">
        
-        <div className="flex-1 text-center md:text-left">
+        <div className="flex-1 text-center flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl font-extrabold text-[#e69100] leading-tight">
-            Here is what you need to stay healthy
+            RTC Vegetables Shop
           </h1>
 
           <p className="mt-6 text-gray-700 text-lg md:text-xl max-w-md mx-auto md:mx-0">
@@ -30,18 +29,9 @@ function App() {
               variant="primary"
               size="medium"
             />
-            <Button title={"Call Us"} variant="tertiary" size="medium" />
           </div>
         </div>
 
-       
-        {/* <div className="flex-1">
-          <img
-            src={ImgMainHeader}
-            alt="Healthy Lifestyle"
-            className="w-full h-auto rounded-xl shadow-lg"
-          />
-        </div> */}
       </div>
 
       <FeatureSection />

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import VegetableCard from "../components/vegetablecard";
-import Navbar from "./../components/navbar";
-import VEGETABLES_DATA from "./data.json";
+import VegetableCard from "../Components/VegetableCard";
+import Navbar from "../Components/Navbar";
+import VEGETABLES_DATA from "./VegetableData.json";
 
 function Vegetables() {
   const [refreshCart, setRefreshCart] = useState(false);
