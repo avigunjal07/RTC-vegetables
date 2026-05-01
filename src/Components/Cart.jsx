@@ -18,7 +18,6 @@ function CartVegetableCard({
 }) {
   return (
     <div className="bg-white shadow-lg rounded-xl border border-gray-200 p-4 flex flex-col md:flex-row items-center gap-4 m-4 hover:shadow-2xl transition-shadow duration-300">
-      {/* Image Section */}
       <div className="flex shrink-0">
         <img
           src={image}
@@ -27,7 +26,6 @@ function CartVegetableCard({
         />
       </div>
 
-      {/* Info Section */}
       <div className="flex-1 w-full">
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center">
           <p className="text-2xl font-semibold text-gray-800">
