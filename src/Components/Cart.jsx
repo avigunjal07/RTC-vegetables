@@ -3,8 +3,11 @@ import Button from "./Button";
 const removeFromCart = (id) => {
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
   const updatedCartItems = cartItems.filter((item) => item.id !== id);
+
   localStorage.setItem("cart", JSON.stringify(updatedCartItems));
-  window.location.reload();
+
+  // 🔥 force redirect + refresh
+  window.location.href = "https://rtc-vegetable.netlify.app/my-cart";
 };
 
 function CartVegetableCard({
