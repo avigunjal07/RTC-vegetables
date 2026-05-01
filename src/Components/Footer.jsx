@@ -1,50 +1,53 @@
-// import { Instagram, Linkedin } from "lucide-react";
-// // import {Github} from "lucide-react";
+import GithubIcon from "../assets/github.png";
+import LinkedinIcon from "../assets/linkedin.png";
+import GmailIcon from "../assets/gmail.png";
 
+function Footer() {
+  return (
+    <footer className="bg-[#346739] text-white py-4 mt-10">
+      <div className="flex flex-row items-center justify-center gap-50">
 
-// const SOCIAL_LINKS = [
-//   {
-//     name: "GitHub",
-//     url: "https://github.com/avigunjal07",
-//     // icon: <Github className="inline-block" />,
-//   },
-//   {
-//     name: "LinkedIn",
-//     url: "https://www.linkedin.com/in/avishkar-gunjal/",
-//     icon: <Linkedin className="inline-block" />,
-//   },
-// //   {
-// //     name: "Instagram",
-// //     url: "https://www.instagram.com/avi_gunjal_2507/",
-// //     icon: <Instagram className="inline-block" />,
-// //   }
-// ,
-// ];
+        <p className="text-lg">
+          Owner: <span className="font-semibold">Avishkar Gunjal</span> | All rights reserved 2026
+        </p>
 
-// const FooterLink = ({ name, url, icon }) => {
-//   return (
-//     <a href={url} className="mx-2 mr-3 align-middle">
-//       {icon}
+        <div className="flex gap-6">
+          <a
+            href="https://github.com/avigunjal07"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={GithubIcon}
+              alt="GitHub"
+              className="w-10 h-10 "
+            />
+          </a>
 
-//       <span className="ml-1">{name}</span>
-//     </a>
-//   );
-// };
+          <a
+            href="https://www.linkedin.com/in/avishkar-gunjal/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={LinkedinIcon}
+              alt="LinkedIn"
+              className="w-10 h-10 "
+            />
+          </a>
 
-// function Footer() {
-//   return (
-//     <div className="w-full bg-white px-10 py-4 flex justify-around">
-//       <div>
-//         Owner <span style={{ color: "red" }}>Avishkar Sopan Gunjal</span> | All rights reserved 2026
-//       </div>
+          <a href="mailto:avishkargunjal07@gmail.com">
+            <img
+              src={GmailIcon}
+              alt="Gmail"
+              className="w-10 h-10 "
+            />
+          </a>
+        </div>
 
-//       <div>
-//         {SOCIAL_LINKS.map(({ name, url, icon }) => {
-//           return <FooterLink key={name} name={name} url={url} icon={icon} />;
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
+      </div>
+    </footer>
+  );
+}
 
-// export default Footer;
+export default Footer;
