@@ -1,4 +1,4 @@
-import Button from "./button";
+import Button from "./Button";
 
 const removeFromCart = (id) => {
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
