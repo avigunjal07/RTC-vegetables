@@ -6,8 +6,8 @@ const removeFromCart = (id) => {
 
   localStorage.setItem("cart", JSON.stringify(updatedCartItems));
 
-  // 🔥 force redirect + refresh
-  window.location.href = "https://rtc-vegetable.netlify.app/my-cart";
+  // 🔥 simple and reliable
+  window.location.reload();
 };
 
 function CartVegetableCard({

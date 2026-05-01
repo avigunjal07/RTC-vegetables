@@ -36,7 +36,7 @@ function VegetableCard({
       <p className="my-2 text-gray-700">
         <span className="text-lg font-semibold text-gray-900">₹{price}</span> per {unit}
       </p>
-      <p className="text-gray-400 text-sm">{tags.join(", ")}</p>
+      <p className="text-gray-400 text-sm">{tags?.join(", ")}</p>
 
      
       <div className="flex justify-center items-center my-4 gap-4">
