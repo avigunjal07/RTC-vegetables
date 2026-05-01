@@ -29,7 +29,7 @@ function Vegetables() {
   }
 
   return (
-    <div className="bg-linear-to-b from-green-100 via-green-50 to-white min-h-screen">
+    <div className="bg-[#] min-h-screen">
       <Navbar refreshCart={refreshCart} />
 
       <div className="container mx-auto px-6 py-12">
